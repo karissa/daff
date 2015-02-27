@@ -123,6 +123,15 @@ class CompareFlags {
      */
     public var allow_nested_cells : Bool;
 
+    /**
+     *
+     * Should column numbers, if present, be rendered spreadsheet-style
+     * as A,B,C,...,AA,BB,CC?
+     * Defaults to true.
+     *
+     */
+    public var count_like_a_spreadsheet : Bool;
+
     public function new() {
         ordered = true;
         show_unchanged = false;
@@ -136,6 +145,7 @@ class CompareFlags {
         ids = null;
         columns_to_ignore = null;
         allow_nested_cells = false;
+        count_like_a_spreadsheet = true;
     }
 
     /**
